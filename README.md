@@ -1,2 +1,2 @@
 # WiseOs package and 3rd package 
-The Wise packages e 3rd package preinstalled
+The Wise packages and 3rd package preinstalled
