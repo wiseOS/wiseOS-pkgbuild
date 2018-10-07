@@ -1,0 +1,28 @@
+# Based on the file created for Arch Linux by:
+# Pierre Schmitz <pierre@archlinux.de>
+
+# Maintainer: MetalNeox
+
+pkgname=wiseos-keyring
+pkgver=20160820
+pkgrel=2
+pkgdesc='WiseOS PGP keyring'
+arch=('any')
+url='https://github.com/wiseOS/wiseOS-pkgbuild/wiseos-keyring'
+license=('GPL')
+install="${pkgname}.install"
+source=('Makefile'
+        'wiseos.gpg'
+        'wiseos-revoked'
+        'wiseos-trusted')
+
+sha256sums=('b6735edc4abda7b5edeff70f3b80c34c86b1a8510865a19fe670d53ca4ab0606'
+            'efd93cb6fea22e8e12e861b1f5eeec1bfba9ad82260a5d156b452eb1249f0377'
+            'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+            'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')
+
+package() {
+	cd "${srcdir}"
+	make PREFIX=/usr DESTDIR=${pkgdir} install
+}
+# -*- mode: bash;-*-
