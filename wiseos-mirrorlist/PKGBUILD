@@ -1,0 +1,19 @@
+# Maintainer: MetalNeox
+
+pkgname=wiseos-mirrorlist
+pkgver=20181008
+pkgrel=1
+pkgdesc="WiseOs GNU/Linux mirror list for use by pacman"
+arch=('any')
+url="https://github.com/wiseos/wiseos-pkgbuild/wiseos-mirrorlist"
+license=('GPL')
+source=(wiseosmirror)
+
+
+package() {
+  mkdir -p $pkgdir/etc/pacman.d
+  install -m644 $srcdir/wiseosmirror $pkgdir/etc/pacman.d/
+}
+
+md5sums=('7d8be0987c4dd70e00d4a929e6888f1b')
+
