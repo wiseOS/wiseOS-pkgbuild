@@ -4,7 +4,7 @@
 # Maintainer: MetalNeox
 
 pkgname=wiseos-keyring
-pkgver=20160820
+pkgver=20201006
 pkgrel=2
 pkgdesc='WiseOS PGP keyring'
 arch=('any')
