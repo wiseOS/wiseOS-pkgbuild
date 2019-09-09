@@ -36,7 +36,7 @@ makedepends=('extra-cmake-modules'
 source+=("https://github.com/calamares/calamares/releases/download/v${pkgver}/calamares-${pkgver}.tar.gz"
          git+https://github.com/wiseOS/wiseOS-calamares)
 
-sha256sums=('a9e76ba46819a1f835119d56fd3827b8f8c7f08f633522bf33aefdc67674211a'
+sha256sums=('742865f7c8e56fd788583baddf3044388d39cb45e601a36e1ed56513c096283b'
             'SKIP')
 
 prepare() {
